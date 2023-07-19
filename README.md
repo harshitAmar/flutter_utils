@@ -11,8 +11,8 @@ In this package you'll get so many functions that you need while writing your co
 
 ## Usage
 //To upload your file to firebase storage. This function will return you the download url of the image
-FirebaseUtils.uploadImageToFirebase(folder: "folder-name", image: your file)
+
 
 ```dart
-const like = 'sample';
+FirebaseUtils.uploadImageToFirebase(folder: "folder-name", image: your file)
 ```
