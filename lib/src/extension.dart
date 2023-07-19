@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:flutter/services.dart';
+
 extension ColorExtension on List {
   toSeperatedList() {
     List<String> list = cast();
@@ -41,4 +43,14 @@ extension StringExtension on String {
   String get toLowerCaseWithDash {
     return toLowerCase().replaceAll(' ', '-');
   }
+}
+
+Future<File> copyAssetToFile(String assetPath, String targetPath) async {
+  final byteData = await rootBundle.load(assetPath);
+  final buffer = byteData.buffer;
+  final file = File(targetPath);
+  await file.create(recursive: true);
+  await file.writeAsBytes(
+      buffer.asUint8List(byteData.offsetInBytes, byteData.lengthInBytes));
+  return file;
 }
