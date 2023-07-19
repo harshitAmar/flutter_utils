@@ -11,29 +11,20 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+  In this package you'll get so many functions that you need while writing your code
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+  In this package I added simple validations for textfields, Basic firebase functions for CRUD options for images and docs, Sharedpreferences basic functions and some extensions for lists, strings and much more.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+  minSdkVersion should be 19
 
 ## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+//To upload your file to firebase storage. This function will return you the download url of the image
+FirebaseUtils.uploadImageToFirebase(folder: "folder-name", image: your file)
 
 ```dart
 const like = 'sample';
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
