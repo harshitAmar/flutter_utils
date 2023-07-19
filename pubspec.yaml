@@ -1,7 +1,7 @@
-name: simple_utils
+name: simple_utils_flutter
 description: A package to simplify your coding
 version: 0.0.1
-homepage:
+repository: https://github.com/harshitAmar/simple_utils_flutter.git
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
