@@ -4,15 +4,15 @@ version: 0.0.1
 repository: https://github.com/harshitAmar/simple_utils_flutter.git
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: '>=2.17.0 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
-  cloud_firestore: ^4.8.3
-  firebase_storage: ^11.2.5
+  cloud_firestore: ^4.4.5
+  firebase_storage: ^11.0.16
   flutter:
     sdk: flutter
-  shared_preferences: ^2.2.0
+  shared_preferences: ^2.1.1
 
 dev_dependencies:
   flutter_test:
