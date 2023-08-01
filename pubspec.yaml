@@ -9,9 +9,12 @@ environment:
 
 dependencies:
   cloud_firestore: ^4.4.5
+  file_picker: ^3.0.4
   firebase_storage: ^11.0.16
   flutter:
     sdk: flutter
+  image_cropper: ^3.0.3
+  image_picker: ^0.8.7+1
   shared_preferences: ^2.1.1
 
 dev_dependencies:
