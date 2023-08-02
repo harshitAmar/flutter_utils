@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 
 extension ColorExtension on List {
+  // Use this extension to change your [List<String>] to a string in which values will be seperated with "|"
   toSeperatedList() {
     List<String> list = cast();
 
@@ -13,6 +14,7 @@ extension ColorExtension on List {
 
     return string;
   }
+  // Use this extension to change your [List<String>] to a string in which values will be seperated with comma
 
   toCommaSeperated() {
     List list = cast();
@@ -30,6 +32,8 @@ extension ColorExtension on List {
 }
 
 extension FileSize on File {
+  // Use this extension to get the size of your file
+
   Future<double> getFileSize() async {
     int fileSizeInBytes = await length();
     double fileSizeInKB = fileSizeInBytes / 1024;

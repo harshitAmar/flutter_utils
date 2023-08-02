@@ -10,9 +10,16 @@ In this package you'll get so many functions that you need while writing your co
   minSdkVersion should be 19
 
 ## Usage
-//To upload your file to firebase storage. This function will return you the download url of the image
+To upload your file to firebase storage. This function will return you the download url of the image
 
 
 ```dart
 FirebaseUtils.uploadImageToFirebase(folder: "folder-name", image: your file)
+
+
+//Add following lines to your manifest file if you wish to use FirebaseUtils
+<activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 ```
